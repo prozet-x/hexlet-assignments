@@ -10,13 +10,8 @@ class App {
     public static Map<String, String> genDiff(Map<String, Object> d1, Map<String, Object> d2) {
         Map<String, String> result = new LinkedHashMap<>();
 
-        Set<String> allKeys = new TreeSet<>();
-        for (Map.Entry<String, Object> elem: d1.entrySet()) {
-            allKeys.add(elem.getKey());
-        }
-        for (Map.Entry<String, Object> elem: d2.entrySet()) {
-            allKeys.add(elem.getKey());
-        }
+        Set<String> allKeys = new TreeSet<>(d1.keySet());
+        allKeys.addAll(d2.keySet());
         for (String key: allKeys) {
             String changes = "";
             if (d1.containsKey(key) && !d2.containsKey(key)) {
