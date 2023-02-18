@@ -2,13 +2,11 @@ package exercise;
 
 // BEGIN
 public class ReversedSequence implements java.lang.CharSequence {
-    private String str;
     private String reversedStr;
     public ReversedSequence(String str) {
-        this.str = str;
-        this.reversedStr = "";
+        reversedStr = "";
         for (int i = 0; i < str.length(); i++) {
-            this.reversedStr = str.charAt(i) + this.reversedStr;
+            reversedStr = str.charAt(i) + reversedStr;
         }
     }
 
