@@ -138,10 +138,8 @@ public class UsersServlet extends HttpServlet {
             return;
         }
         // BEGIN
-        users.remove(users.indexOf(user));
-        request.setAttribute("users", users);
-        RequestDispatcher reqDisp = request.getRequestDispatcher("/users.jsp");
-        reqDisp.forward(request, response);
+        users.remove(user);
+        response.sendRedirect("/users");
         // END
 
     }
