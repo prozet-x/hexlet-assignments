@@ -196,19 +196,22 @@ public class UsersServlet extends HttpServlet {
         String firstName = request.getParameter("firstName");
         String lastName = request.getParameter("lastName");
         String email = request.getParameter("email");
+
+        Map<String, String> updatedUser = new HashMap<>();
+        updatedUser.put("id", id);
+        updatedUser.put("firstName", firstName);
+        updatedUser.put("lastName", lastName);
+        updatedUser.put("email", email);
+
         if (firstName.isEmpty() || lastName.isEmpty()) {
             request.setAttribute("error", "First name and last name must not be empty!");
-            request.setAttribute("firstName", firstName);
-            request.setAttribute("lastName", lastName);
-            request.setAttribute("email", email);
+            request.setAttribute("user", updatedUser);
             response.setStatus(422);
             RequestDispatcher requestDispatcher = request.getRequestDispatcher("/edit.jsp");
             requestDispatcher.forward(request, response);
             return;
         }
-        user.put("firstName", firstName);
-        user.put("lastName", lastName);
-        user.put("email", email);
+        user.putAll(updatedUser);
         response.sendRedirect("/users/show?id=" + id);
         // END
     }
