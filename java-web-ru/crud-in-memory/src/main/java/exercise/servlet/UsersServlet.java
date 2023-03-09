@@ -138,21 +138,22 @@ public class UsersServlet extends HttpServlet {
         String firstName = request.getParameter("firstName");
         String lastName = request.getParameter("lastName");
         String email = request.getParameter("email");
+
+        Map<String, String> newUser = new HashMap<>();
+        newUser.put("firstName", firstName);
+        newUser.put("lastName", lastName);
+        newUser.put("email", email);
+
         if (firstName.isEmpty() || lastName.isEmpty()) {
             request.setAttribute("error", "First name and last name must not be empty!");
-            request.setAttribute("firstName", firstName);
-            request.setAttribute("lastName", lastName);
-            request.setAttribute("email", email);
+            request.setAttribute("user", newUser);;
             response.setStatus(422);
             RequestDispatcher requestDispatcher = request.getRequestDispatcher("/new.jsp");
             requestDispatcher.forward(request, response);
             return;
         }
-        Map<String, String> newUser = new HashMap<>();
+
         newUser.put("id", getNextId());
-        newUser.put("firstName", firstName);
-        newUser.put("lastName", lastName);
-        newUser.put("email", email);
         users.add(newUser);
         response.sendRedirect("/users");
         // END
