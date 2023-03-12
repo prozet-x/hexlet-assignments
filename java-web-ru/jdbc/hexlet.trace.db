@@ -1,0 +1,291 @@
+2023-03-12 15:57:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT ID, TITLE FROM ARTICLES OFFSET ? LIMIT[*] 10"
+Syntax error in SQL statement "SELECT ID, TITLE FROM ARTICLES OFFSET ? LIMIT[*] 10"; SQL statement:
+SELECT id, title FROM articles OFFSET ? LIMIT 10 [42000-200]
+2023-03-12 15:59:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT ID, TITLE FROM ARTICLES OFFSET ? LIMIT[*] 10"
+Syntax error in SQL statement "SELECT ID, TITLE FROM ARTICLES OFFSET ? LIMIT[*] 10"; SQL statement:
+SELECT id, title FROM articles OFFSET ? LIMIT 10 [42000-200]
+2023-03-12 15:59:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT ID, TITLE FROM ARTICLES OFFSET ? LIMIT[*] 10"
+Syntax error in SQL statement "SELECT ID, TITLE FROM ARTICLES OFFSET ? LIMIT[*] 10"; SQL statement:
+SELECT id, title FROM articles OFFSET ? LIMIT 10 [42000-200]
+2023-03-12 16:02:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT ID, TITLE FROM ARTICLES OFFSET ? LIMIT[*] 10"
+Syntax error in SQL statement "SELECT ID, TITLE FROM ARTICLES OFFSET ? LIMIT[*] 10"; SQL statement:
+SELECT id, title FROM articles OFFSET ? LIMIT 10 [42000-200]
+2023-03-12 16:02:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT ID, TITLE FROM ARTICLES OFFSET ? LIMIT[*] 10"
+Syntax error in SQL statement "SELECT ID, TITLE FROM ARTICLES OFFSET ? LIMIT[*] 10"; SQL statement:
+SELECT id, title FROM articles OFFSET ? LIMIT 10 [42000-200]
+2023-03-12 16:02:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT ID, TITLE FROM ARTICLES OFFSET ? LIMIT[*] 10"
+Syntax error in SQL statement "SELECT ID, TITLE FROM ARTICLES OFFSET ? LIMIT[*] 10"; SQL statement:
+SELECT id, title FROM articles OFFSET ? LIMIT 10 [42000-200]
+2023-03-12 16:05:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Недопустимое значение "1" для параметра "parameterIndex"
+Invalid value "1" for parameter "parameterIndex" [90008-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:590)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.getInvalidValueException(DbException.java:280)
+	at org.h2.jdbc.JdbcPreparedStatement.setParameter(JdbcPreparedStatement.java:1503)
+	at org.h2.jdbc.JdbcPreparedStatement.setInt(JdbcPreparedStatement.java:394)
+	at exercise.servlet.ArticlesServlet.showArticles(ArticlesServlet.java:76)
+	at exercise.servlet.ArticlesServlet.doGet(ArticlesServlet.java:55)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:232)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:167)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:544)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:364)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:624)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:831)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1651)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-03-12 16:06:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Недопустимое значение "1" для параметра "parameterIndex"
+Invalid value "1" for parameter "parameterIndex" [90008-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:590)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.getInvalidValueException(DbException.java:280)
+	at org.h2.jdbc.JdbcPreparedStatement.setParameter(JdbcPreparedStatement.java:1503)
+	at org.h2.jdbc.JdbcPreparedStatement.setInt(JdbcPreparedStatement.java:394)
+	at exercise.servlet.ArticlesServlet.showArticles(ArticlesServlet.java:76)
+	at exercise.servlet.ArticlesServlet.doGet(ArticlesServlet.java:55)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:232)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:167)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:544)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:364)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:624)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:831)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1651)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-03-12 16:06:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Недопустимое значение "1" для параметра "parameterIndex"
+Invalid value "1" for parameter "parameterIndex" [90008-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:590)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.getInvalidValueException(DbException.java:280)
+	at org.h2.jdbc.JdbcPreparedStatement.setParameter(JdbcPreparedStatement.java:1503)
+	at org.h2.jdbc.JdbcPreparedStatement.setInt(JdbcPreparedStatement.java:394)
+	at exercise.servlet.ArticlesServlet.showArticles(ArticlesServlet.java:76)
+	at exercise.servlet.ArticlesServlet.doGet(ArticlesServlet.java:55)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:232)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:167)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:544)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:364)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:624)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:831)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1651)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-03-12 16:06:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Недопустимое значение "1" для параметра "parameterIndex"
+Invalid value "1" for parameter "parameterIndex" [90008-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:590)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.getInvalidValueException(DbException.java:280)
+	at org.h2.jdbc.JdbcPreparedStatement.setParameter(JdbcPreparedStatement.java:1503)
+	at org.h2.jdbc.JdbcPreparedStatement.setInt(JdbcPreparedStatement.java:394)
+	at exercise.servlet.ArticlesServlet.showArticles(ArticlesServlet.java:76)
+	at exercise.servlet.ArticlesServlet.doGet(ArticlesServlet.java:55)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:232)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:167)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:544)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:364)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:624)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:831)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1651)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-03-12 16:07:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Недопустимое значение "1" для параметра "parameterIndex"
+Invalid value "1" for parameter "parameterIndex" [90008-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:590)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.getInvalidValueException(DbException.java:280)
+	at org.h2.jdbc.JdbcPreparedStatement.setParameter(JdbcPreparedStatement.java:1503)
+	at org.h2.jdbc.JdbcPreparedStatement.setInt(JdbcPreparedStatement.java:394)
+	at exercise.servlet.ArticlesServlet.showArticles(ArticlesServlet.java:76)
+	at exercise.servlet.ArticlesServlet.doGet(ArticlesServlet.java:55)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:232)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:167)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:544)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:364)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:624)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:831)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1651)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-03-12 16:07:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Недопустимое значение "1" для параметра "parameterIndex"
+Invalid value "1" for parameter "parameterIndex" [90008-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:590)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.getInvalidValueException(DbException.java:280)
+	at org.h2.jdbc.JdbcPreparedStatement.setParameter(JdbcPreparedStatement.java:1503)
+	at org.h2.jdbc.JdbcPreparedStatement.setInt(JdbcPreparedStatement.java:394)
+	at exercise.servlet.ArticlesServlet.showArticles(ArticlesServlet.java:76)
+	at exercise.servlet.ArticlesServlet.doGet(ArticlesServlet.java:55)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:232)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:167)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:544)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:364)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:624)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:831)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1651)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-03-13 02:29:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Объект уже закрыт
+The object is already closed [90007-200]
+2023-03-13 02:30:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Объект уже закрыт
+The object is already closed [90007-200]
+2023-03-13 02:30:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Объект уже закрыт
+The object is already closed [90007-200]
+2023-03-13 03:05:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT * FROM ARTICLES LIMIT 10 OFFSET ? ORDER[*] BY ID"
+Syntax error in SQL statement "SELECT * FROM ARTICLES LIMIT 10 OFFSET ? ORDER[*] BY ID"; SQL statement:
+SELECT * FROM articles LIMIT 10 OFFSET ? ORDER BY id [42000-200]
+2023-03-13 03:05:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT * FROM ARTICLES LIMIT 10 OFFSET ? ORDER[*] BY ID"
+Syntax error in SQL statement "SELECT * FROM ARTICLES LIMIT 10 OFFSET ? ORDER[*] BY ID"; SQL statement:
+SELECT * FROM articles LIMIT 10 OFFSET ? ORDER BY id [42000-200]
+2023-03-13 03:05:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT * FROM ARTICLES LIMIT 10 OFFSET ? ORDER[*] BY ID"
+Syntax error in SQL statement "SELECT * FROM ARTICLES LIMIT 10 OFFSET ? ORDER[*] BY ID"; SQL statement:
+SELECT * FROM articles LIMIT 10 OFFSET ? ORDER BY id [42000-200]
+2023-03-13 03:05:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT * FROM ARTICLES LIMIT 10 OFFSET ? ORDER[*] BY ID"
+Syntax error in SQL statement "SELECT * FROM ARTICLES LIMIT 10 OFFSET ? ORDER[*] BY ID"; SQL statement:
+SELECT * FROM articles LIMIT 10 OFFSET ? ORDER BY id [42000-200]
+2023-03-13 03:05:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT * FROM ARTICLES LIMIT 10 OFFSET ? ORDER[*] BY ID"
+Syntax error in SQL statement "SELECT * FROM ARTICLES LIMIT 10 OFFSET ? ORDER[*] BY ID"; SQL statement:
+SELECT * FROM articles LIMIT 10 OFFSET ? ORDER BY id [42000-200]
+2023-03-13 03:05:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT * FROM ARTICLES LIMIT 10 OFFSET ? ORDER[*] BY ID"
+Syntax error in SQL statement "SELECT * FROM ARTICLES LIMIT 10 OFFSET ? ORDER[*] BY ID"; SQL statement:
+SELECT * FROM articles LIMIT 10 OFFSET ? ORDER BY id [42000-200]
+2023-03-13 03:05:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT * FROM ARTICLES LIMIT 10 OFFSET ? ORDER[*] BY ID"
+Syntax error in SQL statement "SELECT * FROM ARTICLES LIMIT 10 OFFSET ? ORDER[*] BY ID"; SQL statement:
+SELECT * FROM articles LIMIT 10 OFFSET ? ORDER BY id [42000-200]
+2023-03-13 03:05:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT * FROM ARTICLES LIMIT 10 OFFSET ? ORDER[*] BY ID"
+Syntax error in SQL statement "SELECT * FROM ARTICLES LIMIT 10 OFFSET ? ORDER[*] BY ID"; SQL statement:
+SELECT * FROM articles LIMIT 10 OFFSET ? ORDER BY id [42000-200]
+2023-03-13 03:05:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT * FROM ARTICLES LIMIT 10 OFFSET ? ORDER[*] BY ID"
+Syntax error in SQL statement "SELECT * FROM ARTICLES LIMIT 10 OFFSET ? ORDER[*] BY ID"; SQL statement:
+SELECT * FROM articles LIMIT 10 OFFSET ? ORDER BY id [42000-200]
+2023-03-13 03:05:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT * FROM ARTICLES LIMIT 10 OFFSET ? ORDER[*] BY ID"
+Syntax error in SQL statement "SELECT * FROM ARTICLES LIMIT 10 OFFSET ? ORDER[*] BY ID"; SQL statement:
+SELECT * FROM articles LIMIT 10 OFFSET ? ORDER BY id [42000-200]
+2023-03-13 03:05:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT * FROM ARTICLES LIMIT 10 OFFSET ? ORDER[*] BY ID"
+Syntax error in SQL statement "SELECT * FROM ARTICLES LIMIT 10 OFFSET ? ORDER[*] BY ID"; SQL statement:
+SELECT * FROM articles LIMIT 10 OFFSET ? ORDER BY id [42000-200]
+2023-03-13 03:05:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT * FROM ARTICLES LIMIT 10 OFFSET ? ORDER[*] BY ID"
+Syntax error in SQL statement "SELECT * FROM ARTICLES LIMIT 10 OFFSET ? ORDER[*] BY ID"; SQL statement:
+SELECT * FROM articles LIMIT 10 OFFSET ? ORDER BY id [42000-200]
+2023-03-13 03:05:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT * FROM ARTICLES LIMIT 10 OFFSET ? ORDER[*] BY ID"
+Syntax error in SQL statement "SELECT * FROM ARTICLES LIMIT 10 OFFSET ? ORDER[*] BY ID"; SQL statement:
+SELECT * FROM articles LIMIT 10 OFFSET ? ORDER BY id [42000-200]
+2023-03-13 03:05:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT * FROM ARTICLES LIMIT 10 OFFSET ? ORDER[*] BY ID"
+Syntax error in SQL statement "SELECT * FROM ARTICLES LIMIT 10 OFFSET ? ORDER[*] BY ID"; SQL statement:
+SELECT * FROM articles LIMIT 10 OFFSET ? ORDER BY id [42000-200]
+2023-03-13 03:05:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT * FROM ARTICLES LIMIT 10 OFFSET ? ORDER[*] BY ID"
+Syntax error in SQL statement "SELECT * FROM ARTICLES LIMIT 10 OFFSET ? ORDER[*] BY ID"; SQL statement:
+SELECT * FROM articles LIMIT 10 OFFSET ? ORDER BY id [42000-200]
+2023-03-13 03:05:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT * FROM ARTICLES LIMIT 10 OFFSET ? ORDER[*] BY ID"
+Syntax error in SQL statement "SELECT * FROM ARTICLES LIMIT 10 OFFSET ? ORDER[*] BY ID"; SQL statement:
+SELECT * FROM articles LIMIT 10 OFFSET ? ORDER BY id [42000-200]
+2023-03-13 03:05:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT * FROM ARTICLES LIMIT 10 OFFSET ? ORDER[*] BY ID"
+Syntax error in SQL statement "SELECT * FROM ARTICLES LIMIT 10 OFFSET ? ORDER[*] BY ID"; SQL statement:
+SELECT * FROM articles LIMIT 10 OFFSET ? ORDER BY id [42000-200]
+2023-03-13 03:05:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT * FROM ARTICLES LIMIT 10 OFFSET ? ORDER[*] BY ID"
+Syntax error in SQL statement "SELECT * FROM ARTICLES LIMIT 10 OFFSET ? ORDER[*] BY ID"; SQL statement:
+SELECT * FROM articles LIMIT 10 OFFSET ? ORDER BY id [42000-200]
