@@ -162,7 +162,6 @@ public class ArticlesServlet extends HttpServlet {
         String id = getId(request);
 
         Map<String, String> article;
-
         try {
             article = getArticleById(id, connection);
         } catch (SQLException e) {
@@ -219,9 +218,9 @@ public class ArticlesServlet extends HttpServlet {
         String id = getId(request);
 
         // BEGIN
-        Map<String, String> article = new HashMap<>();
+        Map<String, String> article;
         try {
-            article.putAll(getArticleById(id, connection));
+            article = getArticleById(id, connection);
             if (article == null) {
                 response.sendError(HttpServletResponse.SC_NOT_FOUND);
                 return;
@@ -276,9 +275,9 @@ public class ArticlesServlet extends HttpServlet {
         String id = getId(request);
 
         // BEGIN
-        Map<String, String> article = new HashMap<>();
+        Map<String, String> article;
         try {
-            article.putAll(getArticleById(id, connection));
+            article = getArticleById(id, connection);
         } catch (SQLException ex) {
             response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
             return;
