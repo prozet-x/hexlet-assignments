@@ -55,14 +55,8 @@ public class UserController implements CrudHandler {
     public void update(Context ctx, String id) {
 // BEGIN
         User updatedUser = DB.json().toBean(User.class, ctx.body());
-        new QUser()
-                .id.equalTo(Long.valueOf(id))
-                .asUpdate()
-                .set("firstName", updatedUser.getFirstName())
-                .set("lastName", updatedUser.getLastName())
-                .set("email", updatedUser.getEmail())
-                .set("password", updatedUser.getPassword())
-                .update();
+        updatedUser.setId(id);
+        updatedUser.update();
 // END
     };
 
