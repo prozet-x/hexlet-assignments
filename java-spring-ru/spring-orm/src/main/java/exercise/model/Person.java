@@ -8,6 +8,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 // BEGIN
+@Getter
+@Setter
 @Entity
 // END
 public class Person {
@@ -17,7 +19,7 @@ public class Person {
     private long id;
 
     // BEGIN
-    @Getter @Setter private String firstName;
-    @Getter @Setter private String lastName;
+    private String firstName;
+    private String lastName;
     // END
 }

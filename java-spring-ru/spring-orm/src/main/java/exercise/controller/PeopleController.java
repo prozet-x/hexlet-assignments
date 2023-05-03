@@ -43,10 +43,8 @@ public class PeopleController {
 
     @PatchMapping(path = "/{id}")
     public void updatePerson(@PathVariable long id, @RequestBody Person person) {
-        Person targetPerson = personRepository.findById(id);
-        targetPerson.setFirstName(person.getFirstName());
-        targetPerson.setLastName(person.getLastName());
-        personRepository.save(targetPerson);
+        person.setId(id);
+        personRepository.save(person);
     }
     // END
 }
