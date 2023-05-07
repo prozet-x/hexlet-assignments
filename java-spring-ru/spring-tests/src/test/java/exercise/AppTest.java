@@ -113,8 +113,7 @@ public class AppTest {
                 .getResponse();
         assertThat(resp.getStatus()).isEqualTo(200);
         assertThat(resp.getContentType()).isEqualTo(MediaType.APPLICATION_JSON.toString());
-        assertThat(resp.getContentAsString()).contains("Jassica");
-        assertThat(resp.getContentAsString()).contains("Simpson");
+        assertThat(resp.getContentAsString()).contains("Jassica", "Simpson");
     }
 
     @Test
@@ -133,8 +132,7 @@ public class AppTest {
                 .andReturn()
                 .getResponse();
         String content = respCheck.getContentAsString();
-        assertThat(content).contains("Vladimir");
-        assertThat(content).contains("Putin");
+        assertThat(content).contains("Vladimir", "Putin");
         assertThat(content).doesNotContain("Jassica", "Simpson");
     }
 
