@@ -131,6 +131,8 @@ public class AppTest {
                 .perform(get("/people"))
                 .andReturn()
                 .getResponse();
+        assertThat(respCheck.getStatus()).isEqualTo(200);
+        assertThat(respCheck.getContentType()).isEqualTo(MediaType.APPLICATION_JSON);
         String content = respCheck.getContentAsString();
         assertThat(content).contains("Vladimir", "Putin");
         assertThat(content).doesNotContain("Jassica", "Simpson");
@@ -147,6 +149,8 @@ public class AppTest {
                 .perform(get("/people"))
                 .andReturn()
                 .getResponse();
+        assertThat(respCheck.getStatus()).isEqualTo(200);
+        assertThat(respCheck.getContentType()).isEqualTo(MediaType.APPLICATION_JSON);
         String content = respCheck.getContentAsString();
         assertThat(content).doesNotContain("Jassica", "Simpson");
     }
