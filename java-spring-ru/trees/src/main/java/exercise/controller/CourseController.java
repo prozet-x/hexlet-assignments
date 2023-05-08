@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Arrays;
 
@@ -31,7 +30,7 @@ public class CourseController {
 
     // BEGIN
     @GetMapping("/{id}/previous")
-    public List<Course> getParentCourses(@PathVariable long id) {
+    public Iterable<Course> getParentCourses(@PathVariable long id) {
         Course course = courseRepository.findById(id);
         List<Long> parentIdList = getIdListByCourse(course);
         return parentIdList == null ? List.of() : getCourseListByIdList(parentIdList);
@@ -45,10 +44,8 @@ public class CourseController {
                 .toList();
     }
 
-    private List<Course> getCourseListByIdList(List<Long> idList) {
-        List<Course> list = new ArrayList<>();
-        courseRepository.findAllById(idList).forEach(list::add);
-        return list;
+    private Iterable<Course> getCourseListByIdList(List<Long> idList) {
+        return courseRepository.findAllById(idList);
     }
     // END
 
