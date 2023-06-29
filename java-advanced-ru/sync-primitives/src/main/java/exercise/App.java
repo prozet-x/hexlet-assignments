@@ -12,7 +12,6 @@ class App {
         t1.start();
         t2.start();
 
-
         try {
             t1.join();
             t2.join();
@@ -21,7 +20,6 @@ class App {
         }
 
         System.out.println(safeList.getSize());
-
         // END
     }
 }
