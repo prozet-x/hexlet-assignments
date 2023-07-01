@@ -41,24 +41,26 @@ class App {
                 });
     }
 
-//     public static CompletableFuture<Long> getDirectorySize(String path) {
-//         return CompletableFuture.supplyAsync(() -> {
-//             long size = 0;
-//             try {
-//                 Files.list(Path.of(path)).forEach(file -> {
-//
-//                 });
-//                 for(Path elem: Path.of(path)) {
-//                    if (!Files.isDirectory(elem)) {
-//                            size += Files.size(elem);
-//                    }
-//                 }
-//             } catch (Exception e) {
-//                 throw new RuntimeException(e);
-//             }
-//             return size;
-//         });
-//     }
+    public static CompletableFuture<Long> getDirectorySize(String path) {
+        return CompletableFuture.supplyAsync(() -> {
+            Long size;
+            try {
+                size = Files.walk(Path.of(path), 1)
+                        .filter(Files::isRegularFile)
+                        .mapToLong(file -> {
+                            try {
+                                return Files.size(file);
+                            } catch (Exception e) {
+                                throw new RuntimeException(e);
+                            }
+                        })
+                        .sum();
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+            return size;
+        });
+    }
     // END
 
     public static void main(String[] args) throws Exception {

@@ -46,6 +46,9 @@ class AppTest {
     }
 
     // BEGIN
-
+    @Test
+    void testGetDirectorySize() throws Exception {
+        assertThat(App.getDirectorySize("src/test/resources/dir").get()).isEqualTo(26);
+    }
     // END
 }
